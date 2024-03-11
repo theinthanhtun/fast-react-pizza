@@ -30,6 +30,7 @@ function CartItem({ item }) {
         />
         <DeleteItem pizzaId={pizzaId} />
       </div>
+      Hello world
     </li>
   );
 }
