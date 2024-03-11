@@ -22,6 +22,14 @@ function CartItem({ item }) {
         />
         <DeleteItem pizzaId={pizzaId} />
       </div>
+      <div className="flex items-center justify-between sm:gap-6">
+        <p className="text-sm font-bold">{formatCurrency(totalPrice)}</p>
+        <UpdateItemQuanitity
+          pizzaId={pizzaId}
+          currentQuantity={currentQuantity}
+        />
+        <DeleteItem pizzaId={pizzaId} />
+      </div>
     </li>
   );
 }
